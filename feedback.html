@@ -1,0 +1,110 @@
+<html>
+<head>
+<style>
+input[type=text], select {
+    width: 20%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align:centre;
+	}
+    input[type=email] {
+    width: 20%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align:centre;
+	}
+#t1{width: 50%;
+    padding: 105px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align:centre;
+}
+input[type=submit] {
+    width:20%;
+    background-color:brown;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 73.5px;
+text-decoration: none;
+}
+li a:hover {
+background-color:lightgreen;
+}
+li a:active
+{
+background-color:green;
+}
+    #babu1
+    {
+        background-image:url(25.jpg);
+        height:600px;
+        color:black;
+        font-size: 25px;
+    }
+</style>
+</head>
+<body bgcolor="silver">
+<ul>
+<li><a class="active" href="project1st.html">Home</a></li>
+<li><a href="opd.html">OPD</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Signin</a></li>
+<li><a href="feedback.html">feedback</a></li>
+<li><a href="career.html">Career</a></li>
+</ul>
+<div id="babu1">
+<form>
+<label for="fname">First Name</label>
+    <input type="text" id="fname" class="firstname" placeholder="firstname" required>
+<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" class="lastname" placeholder="lastname" required>
+<br>
+    Email
+    <input type="email" id="gmail" class="gmailcom" placeholder="email" required>
+    <br>
+    Feedback
+    <br>
+<textarea cols="100" rows="20" id="text1" class="text2" required></textarea>
+<br>
+<input type="submit" id="t3" class="t4" onclick="myfunction()"></input>
+<div>
+    <script>
+    function myfunction()
+        {
+            window.alert("Done with feedback thanks for visting us." )
+        }
+    </script>
+</body>
+</html>

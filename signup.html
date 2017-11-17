@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input[type=text],[type=number], select {
+    width: 30%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align:centre;
+}
+
+input[type=submit] {
+    width:20%;
+    background-color:brown;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #blue;
+}
+
+div {
+    border-radius: 5px;
+    background-color:silver;
+    padding: 20px;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 73.5px;
+text-decoration: none;
+}
+li a:hover {
+background-color:lightgreen;
+}
+li a:active
+{
+background-color:green;
+}
+
+</style>
+<script>
+function sucess(){
+window.alert("your sign is sucess we will send your password and username to your gmail")}
+</script>
+</head>
+<body bgcolor="gold"><h3>Sign up in this form for better services.</h3>
+<ul>
+<li><a class="active" href="project1st.html">Home</a></li>
+<li><a href="opd.html">OPD</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Signin</a></li>
+<li><a href="feedback.html">feedback</a></li>
+<li><a href="career.html">Career</a></li>
+</ul>
+<div>
+  <form action="action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" required>
+<br>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" required>
+<br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+    <label for="country">Nation:</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	  <option value="india">india</option>
+      <option value="japan">japan</option>
+      <option value="UK">UK</option>
+	  <option value="Bangladesh">Bangladesh</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Gambia">Gambia</option>
+	  <option value="France">France</option>
+      <option value="Finland">Finland</option>
+      <option value="Holy see">Holy see</option>
+    </select>
+  <br>
+  E-mail:
+  <input type="text" id="mail" name="E-mail" required>
+  <br>
+  Address:
+  <input type="text" id="address" name="Address" value="state" required></input>
+  <br>
+  distric:
+  <input type="text" id="distric" name="Distric" required>
+  <br>
+  City:
+  <input type="text" id="cname" name="City" required>
+  <br>
+  age:
+  <input type="number" id="age" name="Age" required>
+  <br>
+  phone:
+  <input type="number" id="phone" name="Number" required>
+  <br>
+    <input type="submit" value="Submit" required>
+</form>
+</div>
+</body>
+</html>
+

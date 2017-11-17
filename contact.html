@@ -1,0 +1,95 @@
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 73.5px;
+text-decoration: none;
+}
+li a:hover {
+background-color:lightgreen;
+}
+li a:active
+{
+background-color:green;
+}
+.dude
+{
+background-color:dimgray;
+top:15px;
+width:100%;
+height:576px;
+left:0;
+color:white;
+font-size:25px;
+    font-family:cursive;
+}
+div ul li
+{
+background-color:pink;
+font-size:25px;
+color:red;
+display:block;
+float:initial;
+}
+#mySelect{
+padding:12px 30px;
+font-size:20px;
+font-style:Goudy old style;
+}
+</style>
+</head>
+<body>
+<ul>
+<li><a class="active" href="project1st.html">Home</a></li>
+<li><a href="opd.html">OPD</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Signin</a></li>
+<li><a href="feedback.html">feedback</a></li>
+<li><a href="career.html">Career</a></li>
+</ul> 
+<div class="dude">
+<image src="8.jpg" align="left" widht="800px" >
+
+<select id="mySelect" onchange="myFunction()">
+    <option value="select">select</option>
+      <option value="45552122">Australia</option>
+      <option value="45115524">Canada</option>
+      <option value="48584885">USA</option>
+	  <option value="45851485">india</option>
+      <option value="45851255">japan</option>
+      <option value="54474444">UK</option>
+	  <option value="45588544">Bangladesh</option>
+      <option value="45884155">Cameroon</option>
+      <option value="48545245">Gambia</option>
+	  <option value="45851225">France</option>
+      <option value="45415215">Finland</option>
+      <option value="45852455">Holy see</option>
+</select>
+
+<p id="demo">contact us any time you want. 24/7 available services.</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("mySelect").value;
+    document.getElementById("demo").innerHTML = "phone number:-" + x;
+}
+</script>
+
+</div>
+</body>
+</html>
+

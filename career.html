@@ -1,0 +1,109 @@
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 73.5px;
+text-decoration: none;
+}
+li a:hover {
+background-color:lightgreen;
+}
+li a:active
+{
+background-color:green;
+}
+    #kamepalli
+    
+    {
+        top:55px;
+        width: 100%;
+        height:520px;
+         position: absolute;
+        background-color: darksalmon;
+        font-family: cursive;
+        font-size: 20px;
+       
+    }
+    #kamepalli1
+    {
+        top:580px;
+        left:45.5%;
+        width: 55%;
+        height: 450px;
+        position: absolute;
+        background-color:darkgoldenrod;
+    }
+    #kamepalli2
+    {
+        top:580px;
+        left:0.5;
+        width:45%;
+        height: 450px;
+       position: absolute;;
+        background-color: white;
+        color: darkgoldenrod;
+        font-family: cursive;
+        font-size: 25px;
+        
+    }
+</style>
+</head>
+<body bgcolor="silver">
+<ul>
+<li><a class="active" href="project1st.html">Home</a></li>
+<li><a href="opd.html">OPD</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Signin</a></li>
+<li><a href="feedback.html">feedback</a></li>
+<li><a href="career.html">Career</a></li>
+</ul>
+    <div id="kamepalli">
+    <p>
+        <img src="26.jpg" align="left" height="500px"></img>
+    This is new hospital we are going to build in Germany whith highly qualified doctors.
+    We also increasing our ambulance services all over the wrold.We are providing helicofter
+    to the far places.We have around 20 chaterflights to send patients to another countries.This plans are first going to start in germany.
+    </p>
+    </div>
+<div id="kamepalli1" style="max-width:1500px">
+ <img class="mySlides" src="27.jpg" style="width:100%" height="450px">
+  <img class="mySlides" src="28.jpg" style="width:100%" height="450px">
+  <img class="mySlides" src="29.jpg" style="width:100%" height="450px">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+<div id="kamepalli2">
+    <p>this are our new chaterflights to shift the patient from your place to hospitel.
+    We are going to buy 25 more helicopters and 5 chaterflights next year.</p>
+</div>
+</body>
+</html>
+

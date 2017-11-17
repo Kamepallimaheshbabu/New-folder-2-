@@ -1,0 +1,140 @@
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 73.5px;
+text-decoration: none;
+}
+li a:hover {
+background-color:lightgreen;
+}
+li a:active
+{
+background-color:green;
+}
+    #babu1
+    {
+        top:55px;
+        height: 415px;
+        background-color: burlywood;
+        font-size: 20px;
+        font-style: italic;
+        position: absolute;
+    }
+    #babu2
+    {
+        top:470px;
+        left:0%;
+        height: 600px;
+        width: 100%;
+        background-color:bisque;
+        position: absolute;
+        font-family: cursive;
+        font-size: 20px;
+    }
+	input[type=submit] {
+    width:10%;
+    background-color:brown;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	}
+    input[type=text] ,select {
+    width: 20%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align:centre;
+	}
+    input[type=datetime], input[type=email] {
+    width: 20%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+	text-align:centre;
+	}
+</style>
+</head>
+<body>
+<ul>
+<li><a class="active" href="project1st.html">Home</a></li>
+<li><a href="opd.html">OPD</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Signin</a></li>
+<li><a href="feedback.html">feedback</a></li>
+<li><a href="career.html">Career</a></li>
+</ul>
+    <div  id="babu1">
+        <p><img src="19.jpg" align="left"></img>
+    After discharge also we are avilable for you for weakly checkup's.
+    we will provide you three free checkup's after discharge.You can register your doctors by calling us on <bold>4376638(Tollfree)</bold>.Mkae a call to us we will provide doctor and solt for you.Call us and book your rooms also.We will provide you a nurse until you want services.
+        </p>
+           </div>
+<div id="babu2">
+    <p>You can also book doctor by your own</p>
+    <form>
+        Firstname
+        <input type="text" id="mahesh" class="mahesh" placeholder="firstname" required>
+        <br>
+        lastName
+        <input type="text" id="mahesh" class="mahesh" placeholder="lastname" required>
+        <br>
+        Email
+        <input type="email" id="mahesh" class="mahesh" placeholder="email" required>
+        <br>
+        Date of meet
+        <input type="datetime" id="mahesh" class="mahesh" placeholder="dd/mm/yyyy" required>
+        <br>
+        select country
+         <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+	  <option value="india">india</option>
+      <option value="japan">japan</option>
+      <option value="UK">UK</option>
+	  <option value="Bangladesh">Bangladesh</option>
+      <option value="Cameroon">Cameroon</option>
+      <option value="Gambia">Gambia</option>
+	  <option value="France">France</option>
+      <option value="Finland">Finland</option>
+      <option value="Holy see">Holy see</option>
+    </select>
+	<br>
+	name of doctor
+	<input type="text" id="mahesh" class="mahesh" placeholder="Doctor name" required>
+	<br>
+	<input type="submit" id="mahesh" class="mahesh" onclick="myfunction()">
+           </form>
+		   <script>
+		 function  myfunction()
+		   {
+		   window.alert("you can meet your doctor in hospital.");}
+		   </script>
+</div>
+</body>
+</html>
+
