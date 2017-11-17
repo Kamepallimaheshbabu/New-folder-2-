@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:black;
+}
+li {
+float: left;
+}
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 73.5px;
+text-decoration: none;
+}
+li a:hover {
+background-color:darkseagreen;
+}
+li a:active
+{
+background-color:green;
+}
+#mahesh1{
+top:15px;
+left:0;
+width:100%;
+height:50px;
+background-color:blue;
+font-size:35px;
+text-align:center;
+color:lightgreen;
+}
+.mahesh{
+top:65px;
+}
+    #mahesh2
+    {
+        top:664px;
+        left:0%;
+        width: 100%;
+        height: 300px;
+        background-color:cadetblue;
+        font-family:cursive;
+        font-size: 25px;
+    }
+</style>
+</head>
+<body>
+<ul>
+<li><a class="active" href="project1st.html">Home</a></li>
+<li><a href="opd.html">OPD</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="signup.html">Signin</a></li>
+<li><a href="feedback.html">feedback</a></li>
+<li><a href="career.html">Career</a></li>
+</ul>
+<div id="mahesh1">KEERTHI HOSPITALS INTERNATIONAL HOSPITAL AND MEDICAL COLLAGE</div>
+<style>
+.mySlides {display:none;}
+</style>
+
+<div class="mahesh" style="max-width:1500px">
+  <img class="mySlides" src="14.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="2.jpg" style="width:100%" height="600px">
+  <img class="mySlides" src="3.jpg" style="width:100%" height="600px">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+<div id="mahesh2">
+    <p>A hospital is not one of the nicest places that one is keen on visiting. But without a hospital in town life could sometimes become a nightmare, especially in times of an emergency. A hospital is linked to life saving services, which enables a person to recover from some serious injury or illness. Sometimes situations in life make it essential for us to move into a hospital. The cause for visiting a hospital could mean illness or visiting a sick or injured person, who is a near and dear one.Keerthi hospital is there for you to give best service.</p></div>
+</body>
+</html>
+
